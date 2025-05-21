@@ -1,6 +1,6 @@
 models/
 output/
-output_phi2
+output_phi2_old
 results/
 logs/
 .idea/

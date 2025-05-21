@@ -8,7 +8,7 @@ import os
 
 # ====== 本地路径配置 ======
 MODEL_PATH = r"G:\LightEditGPT\models\phi-2"      # 本地 phi-2 路径
-ADAPTER_PATH = "../output_phi2"                   # LoRA 训练结果
+ADAPTER_PATH = "../output_phi2_old"  # LoRA 训练结果
 DATA_PATH = "../data/edit_dataset.jsonl"
 
 # ====== 检查路径合法性 ======

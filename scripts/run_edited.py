@@ -6,7 +6,7 @@ import torch
 
 # ============ 路径设置 ============
 MODEL_PATH = r"..\models\phi-2"      # ✅ 你的本地 phi-2 路径
-ADAPTER_PATH = "../output_phi2"                   # ✅ LoRA 输出路径
+ADAPTER_PATH = "../output_phi2_old"  # ✅ LoRA 输出路径
 
 # ============ 加载 tokenizer 和基础模型 ============
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, local_files_only=True)

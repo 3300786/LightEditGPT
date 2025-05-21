@@ -22,13 +22,14 @@ class SilentLossRecorder(TrainerCallback):
         df = pd.DataFrame(self.losses)
         df.to_csv(path, index=False)
 
+
 recorder = SilentLossRecorder()
 
 # ============ 参数配置 ============
 MODEL_PATH = r"../models/phi-2"       # ✅ 你的本地路径
-DATA_PATH = "../data/edit_dataset.jsonl"
+DATA_PATH = "../data/train_with_controls.jsonl"
 OUTPUT_DIR = "../output_phi2"
-EPOCHS = 50
+EPOCHS = 30
 BATCH_SIZE = 1                     # ✅ phi-2 推荐 batch_size=1
 MAX_LEN = 64
 
