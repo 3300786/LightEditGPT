@@ -1,0 +1,6 @@
+models/
+output/
+output_phi2
+results/
+logs/
+.idea/
