@@ -10,6 +10,8 @@ eval_control_path = "../data/eval_control_set.jsonl"
 with open(control_path, "r", encoding="utf-8") as f:
     all_controls = [json.loads(line) for line in f.readlines()]
 
+total = 1000
+all_controls = all_controls[:total]
 # 设置划分比例
 train_ratio = 0.02
 train_size = int(len(all_controls) * train_ratio)
